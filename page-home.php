@@ -7,9 +7,20 @@
 get_header();  ?>
 
 <div class="main">
-  <div class="container">
+	<div class="container">
+		
+		<div class="aboutContainer clearfix">
+			<div class="aboutLeft">
+				<h2>Good Morning</h2>
+				<div class="line"></div><!-- /.line -->
+			</div><!-- /.aboutLeft -->
 
-	<p><?php echo the_field('about_copy'); ?></p>
+			<div class="aboutRight">
+				<?php echo the_field('about_copy'); ?>
+			</div><!-- /.aboutRight -->
+		</div><!-- /.aboutContainer -->
+
+	</div> <!-- /.container -->
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -38,7 +49,7 @@ get_header();  ?>
 
 	<?php echo do_shortcode( get_field('contact_form') ); ?>
 
-  </div> <!-- /.container -->
+
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
