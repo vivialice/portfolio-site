@@ -12,11 +12,15 @@ get_header();  ?>
 		<div class="aboutContainer clearfix">
 			<div class="aboutLeft">
 				<h2>Good Morning</h2>
-				<div class="line"></div><!-- /.line -->
 			</div><!-- /.aboutLeft -->
+
+		<div class="line"></div><!-- /.line -->
 
 			<div class="aboutRight">
 				<?php echo the_field('about_copy'); ?>
+				<div class="contactBtn">
+					<a href="#">Say Hello</a>
+				</div><!-- /.contactBtn -->
 			</div><!-- /.aboutRight -->
 		</div><!-- /.aboutContainer -->
 
@@ -39,6 +43,7 @@ get_header();  ?>
 			<a href="<?php echo get_permalink(); ?>">
 				<div class="portfolioContent">
 					<h2><?php the_title(); ?></h2>
+					<h3><?php the_field('description'); ?></h3>
 					<?php the_terms($post->ID,'technical_skills', '', ''); ?>
 				</div><!-- /.portfolioContent -->
 					<?php the_post_thumbnail( 'homepage-thumb' ); ?>
@@ -46,9 +51,10 @@ get_header();  ?>
 
 	<?php endwhile // end custom loop ?>
 	<?php wp_reset_postdata(); // return end, must do on all custom queries ?>
-
-	<?php echo do_shortcode( get_field('contact_form') ); ?>
-
+	
+	<div class="container">
+		<?php echo do_shortcode( get_field('contact_form') ); ?>
+	</div><!-- /.container -->
 
 </div> <!-- /.main -->
 

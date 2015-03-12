@@ -7,6 +7,7 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat' rel='stylesheet' type='text/css'>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <link rel="stylesheet" href="animate.min.css">
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
