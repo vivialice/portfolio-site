@@ -1,6 +1,11 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  	<?php wp_nav_menu( array(
+  	  'container' => false,
+  	  'container_id' => 'nav',
+  	  'menu' => 'footer'
+  	)); ?>
+    <p>&copy; Vivien Ilett <?php echo date('Y'); ?></p>
   </div>
 </footer>
 

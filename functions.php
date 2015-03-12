@@ -13,6 +13,7 @@ function theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(120, 90, true);
 	add_image_size('square', 150, 150, true);
+	add_image_size('homepage-thumb', 400, 400, true);
 
 
 	// Add default posts and comments RSS feed links to head
@@ -22,7 +23,8 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Main Menu',
+		'footer' => 'Footer Menu'
 	) );
 
 	/*
@@ -266,3 +268,8 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+// goodbye wp bar 
+add_filter('show_admin_bar', '__return_false');
+
+
