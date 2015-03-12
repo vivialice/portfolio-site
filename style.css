@@ -163,8 +163,9 @@ img.alignright {
   clear: both; }
 
 section.nav {
-  background: #3CEFBB;
-  padding: 3px 0; }
+  background: lightgreen;
+  padding: 3px 0;
+  display: none; }
   section.nav ul.menu li {
     display: inline;
     margin-right: 10px; }
@@ -183,6 +184,14 @@ ul#menu-main {
   padding: 0; }
 
 /* =============================================================================
+                   Landing Section
+   ========================================================================== */
+section.landing {
+  width: 100vw;
+  height: 100vh;
+  background: #3CEFBB; }
+
+/* =============================================================================
                    About Section
    ========================================================================== */
 .aboutContainer {
@@ -196,7 +205,7 @@ ul#menu-main {
       font-size: 3.5rem;
       letter-spacing: 0.2rem; }
   .aboutContainer .aboutRight {
-    padding-top: 12%;
+    padding: 12% 0 0 8%;
     width: 50%;
     display: inline-block;
     text-align: right; }
@@ -213,40 +222,75 @@ ul#menu-main {
         color: #FF395A; }
 
 .line {
-  width: 500px;
-  height: 3px;
+  width: 1100px;
+  height: 4px;
   background: #3CEFBB;
   position: relative;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 100px;
-  left: 300px;
+  top: 320px;
+  right: 170px;
   z-index: 0; }
 
+.portfolio {
+  margin-top: 10%;
+  margin-bottom: 10%; }
+
+.portfolioSq {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+  overflow: hidden; }
+
 .portfolioContent {
-  text-align: center;
-  width: 400px;
-  height: 400px;
-  background: rgba(60, 239, 187, 0.9); }
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 239, 187, 0.9);
+  padding: 5%;
+  bottom: -100%;
+  left: 0;
+  z-index: 100;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all; }
   .portfolioContent h2 {
     font-family: 'Abril Fatface', serif;
     letter-spacing: 0.2rem;
     color: black;
-    border: 1px solid hotpink;
-    display: block;
-    font-size: 1.5rem; }
+    font-size: 1.8rem;
+    padding: 1% 2%;
+    text-transform: capitalize; }
   .portfolioContent h3 {
     text-transform: uppercase;
-    border: 1px solid hotpink;
     display: block;
     color: black;
-    font-size: 1rem; }
-  .portfolioContent a {
-    border: 1px solid hotpink;
+    font-size: 1rem;
+    padding: 1%; }
+  .portfolioContent a[rel="tag"] {
+    padding: 1% 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
     color: black;
     text-transform: uppercase;
-    font-size: 0.9rem; }
+    font-size: 0.8rem;
+    background: white;
+    display: inline-block; }
+
+img.attachment-homepage-thumb {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative; }
+
+.tag {
+  display: block;
+  margin-top: 25%; }
+
+.portfolioSq:hover .portfolioContent {
+  bottom: 0; }
 
 /* =============================================================================
                    Default Styling
