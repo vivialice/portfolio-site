@@ -162,10 +162,48 @@ img.alignright {
   float: left;
   clear: both; }
 
-section.nav {
-  background: lightgreen;
+/* =============================================================================
+                   Homepage Nav 
+   ========================================================================== */
+.home section.nav {
+  background: #3CEFBB;
   padding: 3px 0;
-  display: none; }
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+  -webkit-transform: translateY(-150%);
+      -ms-transform: translateY(-150%);
+          transform: translateY(-150%); }
+  .home section.nav.visible {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .home section.nav ul.menu li {
+    display: inline;
+    margin-right: 10px; }
+  .home section.nav ul.menu li a {
+    line-height: 4.5rem;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: 'Montserrat'; }
+    .home section.nav ul.menu li a:hover {
+      color: #FF395A; }
+
+ul#menu-main {
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+/* =============================================================================
+              Nav for all other pages 
+========================================================================== */
+section.nav {
+  background: #3CEFBB;
+  padding: 3px 0;
+  width: 100%; }
   section.nav ul.menu li {
     display: inline;
     margin-right: 10px; }
@@ -189,20 +227,51 @@ ul#menu-main {
 section.landing {
   width: 100vw;
   height: 100vh;
+  padding: 1% 3%;
   background: #3CEFBB; }
+  section.landing svg {
+    display: block;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: relative;
+    top: 40%; }
+  section.landing svg.hand-point {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  section.landing h1, section.landing h2 {
+    color: white;
+    text-align: center;
+    background: #3CEFBB; }
+  section.landing h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.3rem; }
+  section.landing img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%; }
+  section.landing .tri {
+    width: 0;
+    height: 0;
+    position: absolute; }
 
 /* =============================================================================
                    About Section
    ========================================================================== */
 .aboutContainer {
-  padding: 4% 0; }
+  padding: 15% 0;
+  width: 100%; }
   .aboutContainer .aboutLeft {
     width: 50%;
     float: left;
     display: inline-block; }
     .aboutContainer .aboutLeft h2 {
       font-family: 'Abril Fatface', sans-serif;
-      font-size: 3.5rem;
+      font-size: 4rem;
       letter-spacing: 0.2rem; }
   .aboutContainer .aboutRight {
     padding: 12% 0 0 8%;
@@ -222,20 +291,59 @@ section.landing {
         color: #FF395A; }
 
 .line {
-  width: 1100px;
+  width: 1500px;
   height: 4px;
   background: #3CEFBB;
   position: relative;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+          transform: rotate(-50deg);
   top: 320px;
-  right: 170px;
+  right: 320px;
   z-index: 0; }
 
-.portfolio {
-  margin-top: 10%;
+/* =============================================================================
+                   Contact Section
+   ========================================================================== */
+.contact {
   margin-bottom: 10%; }
+  .contact h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem; }
+  .contact p {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; }
+  .contact input {
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px solid black;
+    border-left: none;
+    background: #FAFAFA;
+    width: 100%;
+    margin-top: 5px;
+    padding: 1%; }
+  .contact .wpcf7-textarea {
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px solid black;
+    border-left: none;
+    background: #FAFAFA;
+    width: 100%;
+    margin-top: 5px; }
+  .contact input.wpcf7-submit {
+    display: inline;
+    border: 4px solid #FF395A;
+    padding: 1% 4%;
+    width: 200px;
+    color: #FF395A;
+    background: white;
+    margin: 0; }
+
+.portfolio {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 100vw; }
 
 .portfolioSq {
   position: relative;
@@ -282,8 +390,7 @@ img.attachment-homepage-thumb {
   margin: 0;
   width: 100%;
   height: auto;
-  display: block;
-  position: relative; }
+  display: block; }
 
 .tag {
   display: block;
@@ -329,6 +436,9 @@ a {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif; }
 
+.is-hidden {
+  display: none; }
+
 /* =============================================================================
                    Sidebar
    ========================================================================== */
@@ -349,10 +459,21 @@ a {
 footer {
   clear: both;
   background: #3CEFBB;
-  margin: 0; }
+  margin: 0;
+  width: 100vw;
+  margin-top: 10%;
+  padding: 1% 0; }
   footer p {
     margin: 0;
+    padding: 0;
     text-align: center;
     color: white;
-    padding: 1%;
     font-size: 0.5rem; }
+  footer .social {
+    width: 100%;
+    padding: 7% 0;
+    text-align: center; }
+    footer .social svg#Layer_1 {
+      margin: 0 4%; }
+    footer .social svg#Layer_1:hover {
+      fill: black; }
