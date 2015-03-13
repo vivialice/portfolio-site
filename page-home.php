@@ -10,7 +10,7 @@ get_header();  ?>
 
 	<section class="landing">
 
-	<h1>Vivien Ilett // front-end developer <span>&</span> designer</h1>
+	<h1>Vivien Ilett // front-end developer <span>&amp;</span> designer</h1>
 
 		<!-- LOGO -->
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -32,9 +32,6 @@ get_header();  ?>
 		</g>
 		</svg>
 		<!-- :) -->
-		
-		
-		<!-- <h2>front-end developer &amp; designer</h2> -->
 
 		<!-- hand icon -->
 		<svg class="hand-point" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

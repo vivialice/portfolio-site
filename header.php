@@ -35,8 +35,8 @@
     display: inline-block;
     background-image:url('<?php bloginfo('template_directory'); ?>/img/logo.svg');
     background-repeat: no-repeat;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 85px;
     margin: 0 1% 0 1%;
     text-indent: -9000px;
   }

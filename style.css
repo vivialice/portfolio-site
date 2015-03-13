@@ -167,7 +167,7 @@ img.alignright {
    ========================================================================== */
 .home section.nav {
   background: #3CEFBB;
-  padding: 3px 0;
+  padding: 2px 0;
   position: fixed;
   z-index: 200;
   width: 100%;
@@ -202,7 +202,7 @@ ul#menu-main {
 ========================================================================== */
 section.nav {
   background: #3CEFBB;
-  padding: 3px 0;
+  padding: 2px 0;
   width: 100%; }
   section.nav ul.menu li {
     display: inline;
