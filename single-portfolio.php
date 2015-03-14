@@ -13,15 +13,24 @@
           <?php the_terms($post->ID,'technical_skills', '', ''); ?>
         </div><!-- /.theTerms -->
 
-        <div class="portfolio-page-thumb">
-          <?php the_post_thumbnail( 'homepage-thumb' ); ?>
-        </div><!-- /.portfolio-page-thumb -->
+  </div> <!-- /.container -->      
 
-        <div class="descBox">
-          <p><?php the_field('client_name'); ?></p>
-          <p><?php the_field('description'); ?></p>
-          <a class="btnView" href="http://vivienilett.com/fortuneAPI/fortune.html">View it live</a>
-        </div><!-- /.descBox -->
+        <div class="topRow">
+          <?php $feature_img = get_post_thumbnail_id();
+                $feature_img_url = wp_get_attachment_image_src( $feature_img, 'portfolio-large', true );
+                $feature_url = $feature_img_url[0];
+          ?>
+          <div class="portfolio-page-thumb" style="background-image: url('<?php echo $feature_url ?>');">
+            <!-- <?php the_post_thumbnail( 'homepage-thumb' ); ?> -->
+          </div><!-- /.portfolio-page-thumb -->
+
+          <div class="descBox">
+            <div class="descCopy">
+              <p><?php the_field('description'); ?></p>
+              <a class="btnView" href="http://vivienilett.com/fortuneAPI/fortune.html">View it live</a>
+            </div><!-- /.descCopy -->
+          </div><!-- /.descBox -->
+        </div><!-- /.topRow -->
 
         <div class="images">
         	<?php while(has_sub_field('portfolio_images')) : ?>
@@ -40,7 +49,7 @@
 
 
 
-  </div> <!-- /.container -->
+
 
 </div> <!-- /.main -->
 

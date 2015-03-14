@@ -170,9 +170,9 @@ img.alignright {
   z-index: 200;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
-  -webkit-transform: translateY(-150%);
-      -ms-transform: translateY(-150%);
-          transform: translateY(-150%); }
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%); }
   .home section.nav.visible {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -334,7 +334,7 @@ svg.hand-point2 {
                    Contact Section
    ========================================================================== */
 .contact {
-  margin-bottom: 10%; }
+  padding-bottom: 10%; }
   .contact p {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase; }
@@ -434,24 +434,70 @@ img.attachment-homepage-thumb {
 /* =============================================================================
                    Single Portfolio
    ========================================================================== */
-h3.single {
+.single-portfolio h3.single {
   margin-bottom: 0; }
+.single-portfolio h4 {
+  font-family: 'Lora', serif;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 3%; }
+.single-portfolio .theTerms {
+  font-family: 'Lora', serif;
+  text-transform: uppercase; }
+  .single-portfolio .theTerms a {
+    color: black;
+    font-size: 0.8rem;
+    margin-right: 1%; }
+  .single-portfolio .theTerms a:hover {
+    color: #FF395A; }
+.single-portfolio .topRow {
+  margin-top: 2%;
+  background: #FDECFE;
+  height: 600px; }
+  .single-portfolio .topRow .descBox, .single-portfolio .topRow .portfolio-page-thumb {
+    width: 50%;
+    display: block;
+    float: left; }
+  .single-portfolio .topRow .portfolio-page-thumb {
+    background-size: cover;
+    background-position: center;
+    background-repeat: none; }
+  .single-portfolio .topRow .descBox {
+    background: #FDECFE;
+    padding: 7%;
+    height: 100%; }
+    .single-portfolio .topRow .descBox .descCopy {
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      position: relative;
+      top: 45%; }
+    .single-portfolio .topRow .descBox img {
+      width: 100%; }
+    .single-portfolio .topRow .descBox p {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      line-height: 2rem; }
+    .single-portfolio .topRow .descBox a {
+      border: 4px solid #FF395A;
+      padding: 2% 4%;
+      float: right;
+      color: #FF395A;
+      font-size: 1.1rem; }
+.single-portfolio .portfolio-page-thumb {
+  height: 600px; }
+.single-portfolio .images img {
+  display: block; }
 
-.descBox, .portfolio-page-thumb {
-  width: 50%;
-  display: block;
-  float: left; }
-
-.descBox {
-  border: 1px solid hotpink;
-  padding: 5%; }
-  .descBox p {
-    font-family: 'Lora', serif; }
-  .descBox a {
-    border: 4px solid #FF395A;
-    padding: 2% 4%;
-    color: #FF395A;
-    font-size: 1.1rem; }
+/* =============================================================================
+                   Blog Main
+   ========================================================================== */
+.blog .post h2.entry-title a[rel="bookmark"] {
+  font-family: 'Abril Fatface', serif;
+  color: #333;
+  font-size: 2rem;
+  letter-spacing: 1.2rem; }
 
 /* =============================================================================
                    Default Styling
@@ -535,7 +581,6 @@ footer {
   background: #3CEFBB;
   margin: 0;
   width: 100%;
-  margin-top: 10%;
   padding: 1% 0; }
   footer p {
     margin: 0;
