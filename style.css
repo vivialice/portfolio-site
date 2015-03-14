@@ -166,11 +166,8 @@ img.alignright {
                    Homepage Nav 
    ========================================================================== */
 .home section.nav {
-  background: #3CEFBB;
-  padding: 2px 0;
   position: fixed;
   z-index: 200;
-  width: 100%;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
   -webkit-transform: translateY(-150%);
@@ -180,22 +177,6 @@ img.alignright {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0); }
-  .home section.nav ul.menu li {
-    display: inline;
-    margin-right: 10px; }
-  .home section.nav ul.menu li a {
-    line-height: 4.5rem;
-    color: #FFF;
-    text-transform: uppercase;
-    padding: 10px;
-    font-family: 'Montserrat'; }
-    .home section.nav ul.menu li a:hover {
-      color: #FF395A; }
-
-ul#menu-main {
-  text-align: center;
-  margin: 0;
-  padding: 0; }
 
 /* =============================================================================
               Nav for all other pages 
@@ -225,10 +206,11 @@ ul#menu-main {
                    Landing Section
    ========================================================================== */
 section.landing {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding: 1% 3%;
-  background: #3CEFBB; }
+  background: #3CEFBB;
+  position: fixed; }
   section.landing svg {
     display: block;
     margin: 0 auto;
@@ -258,37 +240,83 @@ section.landing {
     width: 0;
     height: 0;
     position: absolute; }
+  section.landing .triangle1 {
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 350px solid rgba(255, 255, 255, 0.3);
+    top: 20%;
+    left: 5%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  section.landing .triangle2 {
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-top: 230px solid rgba(255, 255, 255, 0.3);
+    top: 5%;
+    right: 6%; }
+  section.landing .triangle3 {
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 80px solid rgba(255, 255, 255, 0.3);
+    top: 50%;
+    right: 32%;
+    -webkit-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+            transform: rotate(35deg); }
+
+.siteWrapper {
+  position: relative;
+  top: 100vh;
+  width: 100%;
+  background: white; }
+
+svg.hand-point2 {
+  position: relative;
+  bottom: 15vh;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  display: block;
+  margin: 0 auto; }
 
 /* =============================================================================
                    About Section
    ========================================================================== */
 .aboutContainer {
-  padding: 15% 0;
-  width: 100%; }
+  padding: 10% 0 20% 0;
+  width: 100%;
+  background: white;
+  position: relative; }
+  .aboutContainer h3.work {
+    position: absolute;
+    bottom: -8%;
+    z-index: 150; }
   .aboutContainer .aboutLeft {
     width: 50%;
-    float: left;
-    display: inline-block; }
+    float: left; }
     .aboutContainer .aboutLeft h2 {
       font-family: 'Abril Fatface', sans-serif;
       font-size: 4rem;
       letter-spacing: 0.2rem; }
   .aboutContainer .aboutRight {
-    padding: 12% 0 0 8%;
+    padding: 15% 0 0 8%;
     width: 50%;
-    display: inline-block;
+    float: left;
     text-align: right; }
+    .aboutContainer .aboutRight span {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      color: #3CEFBB;
+      padding-bottom: 2%; }
     .aboutContainer .aboutRight p {
       line-height: 1.5;
-      font-family: 'Montserrat' sans-serif;
-      font-size: 1.3rem;
+      font-family: 'Lora' sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.1rem;
       display: inline; }
-    .aboutContainer .aboutRight .contactBtn {
-      margin-top: 9%; }
-      .aboutContainer .aboutRight .contactBtn a {
-        border: 4px solid #FF395A;
-        padding: 2% 4%;
-        color: #FF395A; }
 
 .line {
   width: 1500px;
@@ -307,10 +335,6 @@ section.landing {
    ========================================================================== */
 .contact {
   margin-bottom: 10%; }
-  .contact h2 {
-    font-family: 'Abril Fatface', serif;
-    font-size: 2.5rem;
-    letter-spacing: 0.2rem; }
   .contact p {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase; }
@@ -339,11 +363,19 @@ section.landing {
     color: #FF395A;
     background: white;
     margin: 0; }
+  .contact div.wpcf7-mail-sent-ok {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-align: center; }
 
+/* =============================================================================
+                   Home Portfolio
+   ========================================================================== */
 .portfolio {
-  margin-top: 5%;
   margin-bottom: 10%;
-  width: 100vw; }
+  width: 100%;
+  clear: both; }
 
 .portfolioSq {
   position: relative;
@@ -400,10 +432,33 @@ img.attachment-homepage-thumb {
   bottom: 0; }
 
 /* =============================================================================
+                   Single Portfolio
+   ========================================================================== */
+h3.single {
+  margin-bottom: 0; }
+
+.descBox, .portfolio-page-thumb {
+  width: 50%;
+  display: block;
+  float: left; }
+
+.descBox {
+  border: 1px solid hotpink;
+  padding: 5%; }
+  .descBox p {
+    font-family: 'Lora', serif; }
+  .descBox a {
+    border: 4px solid #FF395A;
+    padding: 2% 4%;
+    color: #FF395A;
+    font-size: 1.1rem; }
+
+/* =============================================================================
                    Default Styling
    ========================================================================== */
 body {
-  color: #333; }
+  color: #333;
+  margin: 0; }
 
 .container {
   max-width: 1200px;
@@ -436,6 +491,25 @@ a {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif; }
 
+h3 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 3rem; }
+
+h4 {
+  font-family: 'Montserrat' sans-serif;
+  text-transform: uppercase;
+  margin: 1% 0; }
+
+.btn {
+  margin-top: 9%; }
+  .btn a {
+    border: 4px solid #FF395A;
+    padding: 2% 4%;
+    color: #FF395A;
+    font-size: 1.1rem; }
+
 .is-hidden {
   display: none; }
 
@@ -460,7 +534,7 @@ footer {
   clear: both;
   background: #3CEFBB;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   margin-top: 10%;
   padding: 1% 0; }
   footer p {
