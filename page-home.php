@@ -102,6 +102,7 @@ get_header();  ?>
 						<div class="portfolioContent"><a class="box" href="<?php echo get_permalink(); ?>">
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field('short_description'); ?></h3>
+							<a class="btnView" href="<?php the_field('live_site'); ?>">View it live</a>
 							<div class="tag">
 								<?php the_terms($post->ID,'technical_skills', '', ''); ?>
 							</div><!-- /.tag -->

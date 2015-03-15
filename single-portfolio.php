@@ -30,7 +30,7 @@
           <div class="descBox">
             <div class="descCopy">
               <?php the_field('description'); ?>
-              <a class="btnView" href="http://vivienilett.com/fortuneAPI/fortune.html">View it live</a>
+              <a class="btnView" href="<?php the_field('live_site'); ?>">View it live</a>
             </div><!-- /.descCopy -->
           </div><!-- /.descBox -->
         </div><!-- /.topRow -->

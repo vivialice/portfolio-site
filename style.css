@@ -388,8 +388,8 @@ svg.hand-point2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(60, 239, 187, 0.9);
-  padding: 5%;
+  background: #3cefbb;
+  padding: 15%;
   bottom: -100%;
   left: 0;
   z-index: 100;
@@ -398,16 +398,28 @@ svg.hand-point2 {
   .portfolioContent h2 {
     font-family: 'Abril Fatface', serif;
     letter-spacing: 0.2rem;
-    color: black;
-    font-size: 1.8rem;
-    padding: 1% 2%;
+    color: #333;
+    font-size: 2rem;
+    padding-top: 3%;
+    margin: 0;
+    margin-bottom: 2%;
     text-transform: capitalize; }
   .portfolioContent h3 {
-    text-transform: uppercase;
+    font-family: 'Lora', serif;
     display: block;
-    color: black;
-    font-size: 1rem;
-    padding: 1%; }
+    color: #333;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    margin-bottom: 8%; }
+  .portfolioContent a.btnView {
+    border: 3px solid white;
+    padding: 2% 4%;
+    color: white;
+    font-size: 1rem; }
+  .portfolioContent a.btnView:hover {
+    border: 3px solid #FF395A;
+    color: #FF395A; }
   .portfolioContent a[rel="tag"] {
     padding: 1% 2%;
     margin-right: 2%;
@@ -417,6 +429,8 @@ svg.hand-point2 {
     font-size: 0.8rem;
     background: white;
     display: inline-block; }
+  .portfolioContent a[rel="tag"]:hover {
+    color: #FF395A; }
 
 img.attachment-homepage-thumb {
   margin: 0;
