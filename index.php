@@ -4,11 +4,12 @@
 <div class="main">
   <div class="container">
 
-    <div class="content">
+	
+    <div class="blogContent">
     		<?php get_template_part( 'loop', 'index' );	?>
-    </div> <!--/.content -->
+    </div> <!--/.blogContent -->
 
-    <?php get_sidebar(); ?>
+
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

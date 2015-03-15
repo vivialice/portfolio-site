@@ -33,29 +33,6 @@ get_header();  ?>
 			</svg>
 			<!-- :) -->
 
-			<!-- hand icon -->
-			<!-- <svg class="hand-point" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="70px" height="70px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
-			<g>
-				<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M19.969,47.246
-					c-0.283,1.491-0.353,14.774,5.599,21.292c0.783,0.858,1.197,4.237,2.079,4.89c5.032,3.61,13.787,2.803,18.523,0.828
-					c1.733-0.693,1.18-3.248,2.338-4.498c0,0,7.148-5.09,7.721-14.072c0.255-3.286,0.824-6.166,2.814-9.941
-					c0,0,4.205-6.375,2.773-9.173c-1.745-3.356-6.559-2.97-10.909,3.919c-3.399,5.388-3.372,7.08-3.659,8.367
-					c-0.288,1.234-4.385,1.557-6.313,5.947"/>
-				<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M41.584,31.514
-					c0.969-0.324,1.922-11.209,2.635-17.887c0.402-3.648,1.127-9.556,4.768-9.563c2.719,0.007,3.396,3.944,3.489,6.507
-					c0.094,2.613,0.521,22.81,1.894,25.249"/>
-				<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M33.826,33.741
-					c-0.242-0.753-5.146-4.327-7.885,0.743c-1.487,3.204,1.056,8.239,2.245,12.014c1.136,3.622,6.503,7.305,8.118,0.945"/>
-				<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M37.083,29.074
-					c4.956-1.105,5.067,5.713,5.745,9.65c0.281,1.585,0.553,5.631-0.413,9.338c-1.977,4.596-5.312,1.317-5.957-0.57
-					C34.626,42.086,31.003,30.454,37.083,29.074z"/>
-				<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M25.267,37.212
-					c0.884,0.807-3.606-4.198-6.361-0.154c-2.304,3.371-0.234,7.748,1.564,11.154c1.747,3.406,4.685,4.334,6.211,3.592
-					c2.187-1.113,1.879-4.287,1.879-4.287"/>
-			</g>
-			</svg> -->
-
 			<div class="tri triangle1"></div><!-- /.tri triangle1 -->
 			<div class="tri triangle2"></div><!-- /.tri triangle2 -->
 			<div class="tri triangle3"></div><!-- /.tri triangle3 -->
@@ -89,7 +66,7 @@ get_header();  ?>
 
 		<div class="aboutContainer clearfix">
 			<div class="aboutLeft">
-				<h2>Good Morning</h2>
+				<h2 class="message">Hello there</h2>
 			</div><!-- /.aboutLeft -->
 
 		<div class="line"></div><!-- /.line -->
@@ -97,7 +74,7 @@ get_header();  ?>
 			<div class="aboutRight">
 				<?php echo the_field('about_copy'); ?>
 				<div class="btn">
-					<a href="#">Want to chat?</a>
+					<a href="#contact">Want to chat?</a>
 				</div><!-- /.contactBtn -->
 			</div><!-- /.aboutRight -->
 
@@ -137,7 +114,7 @@ get_header();  ?>
 		<?php wp_reset_postdata(); // return end, must do on all custom queries ?>
 	</section><!-- /.portfolio -->
 	
-	<div class="contact container clearfix">
+	<div id="contact" class="contact container clearfix">
 		<h3>Contact me</h3>
 		<?php echo do_shortcode( get_field('contact_form') ); ?>
 	</div><!-- /.container -->
