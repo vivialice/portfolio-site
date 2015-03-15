@@ -478,17 +478,33 @@ img.attachment-homepage-thumb {
     .single-portfolio .topRow .descBox p {
       font-family: 'Lora', serif;
       font-size: 1.3rem;
-      line-height: 2rem; }
+      line-height: 2rem;
+      margin-bottom: 8%; }
     .single-portfolio .topRow .descBox a {
       border: 4px solid #FF395A;
       padding: 2% 4%;
-      float: right;
+      margin-top: 15%;
       color: #FF395A;
       font-size: 1.1rem; }
 .single-portfolio .portfolio-page-thumb {
   height: 600px; }
 .single-portfolio .images img {
   display: block; }
+
+.postid-37 .topRow .descBox {
+  background: #EFEFEF; }
+
+.postid-24 .topRow .descBox {
+  background: #DEFFFB; }
+
+.postid-41 .topRow .descBox {
+  background: #FDFDE7; }
+
+.postid-18 .topRow .descBox {
+  background: #ECFEF2; }
+
+.postid-39 .topRow .descBox {
+  background: #EFEFEF; }
 
 /* =============================================================================
                    Blog Main

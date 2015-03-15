@@ -13,6 +13,9 @@
           <?php the_terms($post->ID,'technical_skills', '', ''); ?>
         </div><!-- /.theTerms -->
 
+        <!-- next and previous buttons -->
+        <div class="portNav"><?php previous_post_link('%link', 'PREV'); ?> | <?php next_post_link('%link', 'NEXT'); ?></div>
+
   </div> <!-- /.container -->      
 
         <div class="topRow">
@@ -26,7 +29,7 @@
 
           <div class="descBox">
             <div class="descCopy">
-              <p><?php the_field('description'); ?></p>
+              <?php the_field('description'); ?>
               <a class="btnView" href="http://vivienilett.com/fortuneAPI/fortune.html">View it live</a>
             </div><!-- /.descCopy -->
           </div><!-- /.descBox -->
