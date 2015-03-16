@@ -76,6 +76,14 @@ function hackeryou_scripts() {
   );
 }
 
+	wp_enqueue_script(
+	  'plugins', //handle
+	  get_template_directory_uri() . '/js/svg-morpheus.js', //source
+	  false, //dependencies
+	  null, // version number
+	  true //load in footer
+	);
+
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
 
 
@@ -128,14 +136,14 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Continue reading</a>';
+	return '<div class="cont"> <a href="'. get_permalink() . '">Continue reading</a></div>';
 }
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and hackeryou_continue_reading_link().
  */
 function hackeryou_auto_excerpt_more( $more ) {
-	return ' &hellip;' . hackeryou_continue_reading_link();
+	return hackeryou_continue_reading_link();
 }
 add_filter( 'excerpt_more', 'hackeryou_auto_excerpt_more' );
 

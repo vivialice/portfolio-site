@@ -14,7 +14,6 @@ $(function(){
 	});
 
 	// get time from user + return message in about section
-
 	var timeMessage = function() {
 
 		var getTime = new Date()
@@ -43,7 +42,7 @@ $(function(){
 	timeMessage();
 
 
-	// smooth scroll 
+	// smooth scroll by chris coyier
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

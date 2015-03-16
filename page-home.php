@@ -41,10 +41,13 @@ get_header();  ?>
 	<div class="siteWrapper">
 	<div class="container">
 		
+		<div class="iconParty">
+			
+		</div><!-- /.iconParty -->
 		<!-- hand icon -->
-		<svg class="hand-point2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<svg id="icons" class="hand-point2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="70px" height="70px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
-		<g>
+		<g id="point">
 			<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M19.969,47.246
 				c-0.283,1.491-0.353,14.774,5.599,21.292c0.783,0.858,1.197,4.237,2.079,4.89c5.032,3.61,13.787,2.803,18.523,0.828
 				c1.733-0.693,1.18-3.248,2.338-4.498c0,0,7.148-5.09,7.721-14.072c0.255-3.286,0.824-6.166,2.814-9.941

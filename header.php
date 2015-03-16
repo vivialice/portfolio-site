@@ -7,8 +7,9 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat|Lora:400,700' rel='stylesheet' type='text/css'>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-  <link rel="stylesheet" href="animate.min.css">
+<!--   <link rel="stylesheet" href="animate.min.css"> -->
   <link rel="icon" type="image/png" href="<?php bloginfo( 'template_directory' ); ?>/img/favicon.ico">
+
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
