@@ -552,6 +552,100 @@ img.attachment-homepage-thumb {
   color: #FF395A;
   font-size: 1.1rem; }
 
+@media (max-width: 1120px) {
+  .container {
+    max-width: 800px; }
+  .aboutContainer {
+    padding: 10% 3% 15% 3%; }
+    .aboutContainer .aboutRight p {
+      font-size: 1.2rem; }
+    .aboutContainer h3.work {
+      bottom: -10%; }
+  .portfolioContent h2 {
+    font-size: 1.3rem; }
+  .tag {
+    margin-top: 13%; }
+  .contact {
+    padding: 0 3%;
+    margin-bottom: 5%; }
+  .line {
+    right: 380px; } }
+
+@media (max-width: 900px) {
+  .aboutContainer .aboutLeft, .aboutContainer .aboutRight {
+    float: none;
+    width: 100%;
+    padding: 0; }
+  .aboutContainer h3.work {
+    font-size: 2rem;
+    margin-bottom: 6%; }
+  .aboutContainer h2.message {
+    font-size: 3.5rem; }
+  .aboutContainer .line {
+    display: none; }
+  .portfolioSq {
+    width: 50%; }
+    .portfolioSq .portfolioContent h2 {
+      font-size: 1.5rem; }
+  .contact h3 {
+    font-size: 2rem; }
+  .single-portfolio .container {
+    padding: 0 5%; }
+  .single-portfolio .topRow {
+    height: 500px; }
+  .single-portfolio .portfolio-page-thumb {
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: none; }
+  .single-portfolio .descBox .descCopy p {
+    font-size: 1.1rem;
+    line-height: 1.7rem; } }
+
+@media (max-width: 740px) {
+  .aboutContainer h3.work {
+    margin-bottom: 6%; }
+  .single-portfolio .topRow {
+    height: 400px; }
+  .single-portfolio .portfolio-page-thumb {
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: none; }
+  .single-portfolio .descBox .descCopy p {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .single-portfolio .descBox a {
+    border: 2px solid #FF395A; } }
+
+@media (max-width: 650px) {
+  .single-portfolio .topRow {
+    height: 400px; }
+    .single-portfolio .topRow .descBox, .single-portfolio .topRow .portfolio-page-thumb {
+      width: 100%; }
+  .single-portfolio .portfolio-page-thumb {
+    height: 500px;
+    background-size: contain; }
+  .single-portfolio .descBox .descCopy p {
+    font-size: 1.2rem;
+    line-height: 1.7rem; }
+  .single-portfolio .descBox a {
+    border: 2px solid #FF395A; } }
+
+@media (max-width: 550px) {
+  .aboutContainer {
+    padding-bottom: 20%; }
+    .aboutContainer h3.work {
+      bottom: -8%; }
+  .portfolioSq {
+    width: 100%; }
+    .portfolioSq .portfolioContent h2 {
+      font-size: 2.2rem; } }
+
+@media (max-width: 400px) {
+  .single-portfolio h3.single {
+    line-height: 1px; } }
+
 /* =============================================================================
                    Default Styling
    ========================================================================== */
