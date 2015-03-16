@@ -420,17 +420,23 @@ svg.hand-point2 {
   .portfolioContent a.btnView:hover {
     border: 3px solid #FF395A;
     color: #FF395A; }
-  .portfolioContent a[rel="tag"] {
-    padding: 1% 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    color: black;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    background: white;
-    display: inline-block; }
-  .portfolioContent a[rel="tag"]:hover {
-    color: #FF395A; }
+
+.tag {
+  display: block;
+  margin-top: 25%; }
+  .tag ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .tag ul li {
+      display: inline-block;
+      color: #333;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      background: white;
+      padding: 1% 2%;
+      margin-bottom: 2%;
+      font-family: 'Montserrat' sans-serif; }
 
 img.attachment-homepage-thumb {
   margin: 0;
@@ -438,16 +444,29 @@ img.attachment-homepage-thumb {
   height: auto;
   display: block; }
 
-.tag {
-  display: block;
-  margin-top: 25%; }
-
 .portfolioSq:hover .portfolioContent {
   bottom: 0; }
 
 /* =============================================================================
                    Single Portfolio
    ========================================================================== */
+.single-portfolio img {
+  width: 100%;
+  height: auto; }
+.single-portfolio .portNav a {
+  color: #333; }
+.single-portfolio .portNav a:hover {
+  color: #FF395A; }
+.single-portfolio .tag {
+  margin: 0; }
+  .single-portfolio .tag ul {
+    margin-top: 0.5%; }
+  .single-portfolio .tag li {
+    background: none;
+    padding: 0 1% 0 0; }
+  .single-portfolio .tag span {
+    font-family: 'Lora', serif;
+    color: #3CEFBB; }
 .single-portfolio h3.single {
   margin-bottom: 0; }
 .single-portfolio h4 {
@@ -456,15 +475,6 @@ img.attachment-homepage-thumb {
   font-size: 1.4rem;
   font-weight: 400;
   margin-bottom: 3%; }
-.single-portfolio .theTerms {
-  font-family: 'Lora', serif;
-  text-transform: uppercase; }
-  .single-portfolio .theTerms a {
-    color: black;
-    font-size: 0.8rem;
-    margin-right: 1%; }
-  .single-portfolio .theTerms a:hover {
-    color: #FF395A; }
 .single-portfolio .topRow {
   margin-top: 2%;
   background: #FDECFE;
@@ -505,15 +515,21 @@ img.attachment-homepage-thumb {
 .single-portfolio .images img {
   display: block; }
 
+.postid-37 span.tools {
+  display: none; }
 .postid-37 .topRow .descBox {
   background: #EFEFEF; }
 
+.postid-24 span.tools {
+  display: none; }
 .postid-24 .topRow .descBox {
   background: #DEFFFB; }
 
 .postid-41 .topRow .descBox {
   background: #FDFDE7; }
 
+.postid-18 span.tools {
+  display: none; }
 .postid-18 .topRow .descBox {
   background: #ECFEF2; }
 

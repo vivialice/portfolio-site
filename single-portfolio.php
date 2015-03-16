@@ -9,8 +9,25 @@
 
         <h3 class="single"><?php the_title(); ?></h3>
         <h4><?php the_field('short_description'); ?></h4>
-        <div class="theTerms">
-          <?php the_terms($post->ID,'technical_skills', '', ''); ?>
+        <div class="tag">
+          <span class="technologies">Technologies used:</span><?php $terms = get_the_terms($post->ID, 'technical_skills' ); ?>
+          <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : ?>
+                  <ul>
+                      <?php foreach ( $terms as $term ) : ?>
+                      <li><?php echo $term->name ?></li>
+                      <?php endforeach ?>
+               </ul>
+          <?php endif ?>
+
+          <span class="tools">Tools used:</span><?php $terms = get_the_terms($post->ID, 'workflow_tools' ); ?>
+          <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : ?>
+                  <ul>
+                      <?php foreach ( $terms as $term ) : ?>
+                      <li><?php echo $term->name ?></li>
+                      <?php endforeach ?>
+               </ul>
+          <?php endif ?>
+
         </div><!-- /.theTerms -->
 
         <!-- next and previous buttons -->
@@ -24,7 +41,6 @@
                 $feature_url = $feature_img_url[0];
           ?>
           <div class="portfolio-page-thumb" style="background-image: url('<?php echo $feature_url ?>');">
-            <!-- <?php the_post_thumbnail( 'homepage-thumb' ); ?> -->
           </div><!-- /.portfolio-page-thumb -->
 
           <div class="descBox">
@@ -49,9 +65,6 @@
         <?php //the_content(); ?>
 
       <?php endwhile; // end of the loop. ?>
-
-
-
 
 
 </div> <!-- /.main -->

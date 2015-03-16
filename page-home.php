@@ -104,7 +104,16 @@ get_header();  ?>
 							<h3><?php the_field('short_description'); ?></h3>
 							<a class="btnView" href="<?php the_field('live_site'); ?>">View it live</a>
 							<div class="tag">
-								<?php the_terms($post->ID,'technical_skills', '', ''); ?>
+								
+								<?php $terms = get_the_terms($post->ID, 'technical_skills' ); ?>
+								<?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : ?>
+								        <ul>
+								            <?php foreach ( $terms as $term ) : ?>
+								            <li><?php echo $term->name ?></li>
+								            <?php endforeach ?>
+								     </ul>
+								<?php endif ?>
+
 							</div><!-- /.tag -->
 						</div><!-- /.portfolioContent -->
 							<?php the_post_thumbnail( 'homepage-thumb' ); ?>

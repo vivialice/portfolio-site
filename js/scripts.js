@@ -43,7 +43,6 @@ $(function(){
 	timeMessage();
 
 
-
 	// smooth scroll 
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
