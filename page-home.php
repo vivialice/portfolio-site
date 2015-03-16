@@ -33,39 +33,42 @@ get_header();  ?>
 			</svg>
 			<!-- :) -->
 
-			<div class="tri triangle1"></div><!-- /.tri triangle1 -->
-			<div class="tri triangle2"></div><!-- /.tri triangle2 -->
-			<div class="tri triangle3"></div><!-- /.tri triangle3 -->
+			<div class="patternLeft">
+				<img src="<?php bloginfo( 'template_directory' ); ?>/img/shape-left.svg" alt="">
+			</div><!-- /.patternLeft -->
+
+			<div class="patternRight">
+				<img src="<?php bloginfo( 'template_directory' ); ?>/img/shape-right.svg" alt="">
+			</div><!-- /.patternRight -->
+
 		</section><!-- /.landing -->
 	
 	<div class="siteWrapper">
 	<div class="container">
 		
-		<div class="iconParty">
-			
-		</div><!-- /.iconParty -->
+
 		<!-- hand icon -->
-		<svg id="icons" class="hand-point2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<svg class="hand-point2 bounce" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="70px" height="70px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
-		<g id="point">
-			<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M19.969,47.246
-				c-0.283,1.491-0.353,14.774,5.599,21.292c0.783,0.858,1.197,4.237,2.079,4.89c5.032,3.61,13.787,2.803,18.523,0.828
-				c1.733-0.693,1.18-3.248,2.338-4.498c0,0,7.148-5.09,7.721-14.072c0.255-3.286,0.824-6.166,2.814-9.941
-				c0,0,4.205-6.375,2.773-9.173c-1.745-3.356-6.559-2.97-10.909,3.919c-3.399,5.388-3.372,7.08-3.659,8.367
-				c-0.288,1.234-4.385,1.557-6.313,5.947"/>
-			<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M41.584,31.514
-				c0.969-0.324,1.922-11.209,2.635-17.887c0.402-3.648,1.127-9.556,4.768-9.563c2.719,0.007,3.396,3.944,3.489,6.507
-				c0.094,2.613,0.521,22.81,1.894,25.249"/>
-			<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M33.826,33.741
-				c-0.242-0.753-5.146-4.327-7.885,0.743c-1.487,3.204,1.056,8.239,2.245,12.014c1.136,3.622,6.503,7.305,8.118,0.945"/>
-			<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M37.083,29.074
-				c4.956-1.105,5.067,5.713,5.745,9.65c0.281,1.585,0.553,5.631-0.413,9.338c-1.977,4.596-5.312,1.317-5.957-0.57
-				C34.626,42.086,31.003,30.454,37.083,29.074z"/>
-			<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M25.267,37.212
-				c0.884,0.807-3.606-4.198-6.361-0.154c-2.304,3.371-0.234,7.748,1.564,11.154c1.747,3.406,4.685,4.334,6.211,3.592
-				c2.187-1.113,1.879-4.287,1.879-4.287"/>
-		</g>
-		</svg>
+			 <g>
+			 	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M60.03,32.754
+			 		c0.283-1.49,0.353-14.773-5.599-21.292c-0.783-0.858-1.197-4.237-2.079-4.89C47.32,2.962,38.566,3.77,33.83,5.744
+			 		c-1.732,0.693-1.18,3.248-2.338,4.498c0,0-7.148,5.09-7.721,14.072c-0.256,3.285-0.824,6.166-2.814,9.94
+			 		c0,0-4.205,6.375-2.773,9.174c1.746,3.355,6.56,2.97,10.909-3.92c3.399-5.388,3.372-7.079,3.659-8.366
+			 		c0.288-1.234,4.385-1.558,6.312-5.947"/>
+			 	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M38.416,48.486
+			 		c-0.969,0.324-1.922,11.209-2.635,17.887c-0.402,3.648-1.127,9.557-4.768,9.563c-2.72-0.007-3.396-3.944-3.49-6.507
+			 		c-0.094-2.613-0.521-22.811-1.894-25.249"/>
+			 	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M46.173,46.259
+			 		c0.242,0.754,5.146,4.327,7.886-0.742c1.486-3.204-1.057-8.239-2.245-12.015c-1.136-3.622-6.503-7.305-8.118-0.945"/>
+			 	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M42.916,50.926
+			 		c-4.956,1.105-5.067-5.713-5.745-9.649c-0.281-1.585-0.553-5.632,0.413-9.339c1.977-4.596,5.312-1.316,5.957,0.57
+			 		C45.373,37.914,48.996,49.546,42.916,50.926z"/>
+			 	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M54.732,42.788
+			 		c-0.884-0.807,3.605,4.198,6.36,0.154c2.305-3.372,0.234-7.749-1.563-11.154c-1.747-3.406-4.685-4.334-6.211-3.593
+			 		c-2.188,1.113-1.879,4.287-1.879,4.287"/>
+			 </g>
+			 </svg>
 
 		<div class="aboutContainer clearfix">
 			<div class="aboutLeft">
@@ -105,7 +108,7 @@ get_header();  ?>
 						<div class="portfolioContent"><a class="box" href="<?php echo get_permalink(); ?>">
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field('short_description'); ?></h3>
-							<a class="btnView" href="<?php the_field('live_site'); ?>">View it live</a>
+							<a class="btnView" target="blank" href="<?php the_field('live_site'); ?>">View it live</a>
 							<div class="tag">
 								
 								<?php $terms = get_the_terms($post->ID, 'technical_skills' ); ?>
@@ -128,8 +131,9 @@ get_header();  ?>
 	</section><!-- /.portfolio -->
 	
 	<div id="contact" class="contact container clearfix">
-		<h3>Contact me</h3>
-		<?php echo do_shortcode( get_field('contact_form') ); ?>
+
+		<a href="mailto:hello@vivienilett.com">hello@vivienilett.com</a>
+
 	</div><!-- /.container -->
 
 <?php get_footer(); ?>

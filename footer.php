@@ -2,8 +2,7 @@
   <div class="container">
 	<div class="social">
 		<a href="http://twitter.com/vivienilett">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="50px" height="50px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
 			<path fill="#FFFFFF" d="M76.534,17.322c-2.691,1.191-5.585,1.996-8.618,2.36c3.103-1.857,5.483-4.797,6.598-8.297
 				c-2.901,1.719-6.108,2.964-9.533,3.635c-2.729-2.913-6.631-4.736-10.949-4.736c-8.282,0-14.998,6.719-14.998,15.002
 				c0,1.178,0.125,2.323,0.385,3.417c-12.466-0.625-23.52-6.594-30.927-15.677C7.2,15.25,6.462,17.825,6.462,20.574
@@ -15,8 +14,7 @@
 		</a>
 
 		<a href="http://github.com/vivialice">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="50px" height="50px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M40.638,3.773c-19.945,0-36.115,16.175-36.115,36.122
 				c0,15.957,10.346,29.495,24.702,34.272c1.806,0.329,2.465-0.786,2.465-1.742c0-0.857-0.031-3.131-0.048-6.144
 				c-10.047,2.182-12.169-4.843-12.169-4.843c-1.641-4.171-4.01-5.282-4.01-5.282c-3.278-2.239,0.249-2.196,0.249-2.196
@@ -30,8 +28,7 @@
 		</a>
 
 		<a href="http://ca.linkedin.com/in/vivienilett">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="50px" height="50px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
 			<path fill="#FFFFFF" d="M22.037,69.471H9.524v-40.04h12.513V69.471z M15.461,24.421H15.37c-4.529,0-7.462-3.062-7.462-6.94
 				c0-3.951,3.021-6.952,7.644-6.952c4.614,0,7.452,2.994,7.54,6.944C23.091,21.352,20.165,24.421,15.461,24.421z M72.094,69.471
 				H57.904v-20.72c0-5.426-2.215-9.126-7.098-9.126c-3.729,0-5.806,2.499-6.773,4.909c-0.362,0.863-0.303,2.065-0.303,3.272v21.665
@@ -40,8 +37,7 @@
 		</a>
 
 		<a href="http://instagram.com/vivi_alice">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="50px" height="50px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
 			<path fill="#FFFFFF" d="M60.02,8.131H20.917C14.125,8.131,8.6,13.657,8.6,20.45v13.007v26.094c0,6.792,5.525,12.318,12.318,12.318
 				H60.02c6.792,0,12.317-5.526,12.317-12.318V33.457V20.45C72.337,13.657,66.812,8.131,60.02,8.131z M63.554,15.479l1.408-0.006v1.404
 				v9.399l-10.77,0.036l-0.036-10.803L63.554,15.479z M31.374,33.457c2.04-2.826,5.352-4.677,9.094-4.677

@@ -237,10 +237,14 @@ section.landing {
     display: block;
     margin: 0 auto;
     margin-top: 5%; }
-  section.landing .tri {
-    width: 0;
-    height: 0;
-    position: absolute; }
+  section.landing .patternLeft {
+    position: absolute;
+    left: 3%;
+    bottom: -7%; }
+  section.landing .patternRight {
+    position: absolute;
+    bottom: -7%;
+    right: -2%; }
 
 .siteWrapper {
   position: relative;
@@ -256,6 +260,36 @@ svg.hand-point2 {
           transform: rotate(180deg);
   display: block;
   margin: 0 auto; }
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px); } }
 
 /* =============================================================================
                    About Section
@@ -303,7 +337,7 @@ svg.hand-point2 {
   -webkit-transform: rotate(-50deg);
       -ms-transform: rotate(-50deg);
           transform: rotate(-50deg);
-  top: 320px;
+  top: 360px;
   right: 320px;
   z-index: 0; }
 
@@ -312,6 +346,14 @@ svg.hand-point2 {
    ========================================================================== */
 .contact {
   padding-bottom: 10%; }
+  .contact a {
+    text-align: center;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #3CEFBB; }
+  .contact a:hover {
+    color: #FF395A; }
   .contact p {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase; }
@@ -556,7 +598,11 @@ img.attachment-homepage-thumb {
     padding: 0 3%;
     margin-bottom: 5%; }
   .line {
-    right: 380px; } }
+    right: 380px; }
+  .contact a {
+    padding-bottom: 10%; }
+  .single-portfolio .container {
+    padding: 0 5%; } }
 
 @media (max-width: 900px) {
   .aboutContainer .aboutLeft, .aboutContainer .aboutRight {
@@ -587,7 +633,9 @@ img.attachment-homepage-thumb {
     background-repeat: none; }
   .single-portfolio .descBox .descCopy p {
     font-size: 1.1rem;
-    line-height: 1.7rem; } }
+    line-height: 1.7rem; }
+  .contact a {
+    padding-bottom: 10%; } }
 
 @media (max-width: 740px) {
   .aboutContainer h3.work {
@@ -603,7 +651,9 @@ img.attachment-homepage-thumb {
     font-size: 1rem;
     line-height: 1.5rem; }
   .single-portfolio .descBox a {
-    border: 2px solid #FF395A; } }
+    border: 2px solid #FF395A; }
+  .contact a {
+    font-size: 3rem; } }
 
 @media (max-width: 650px) {
   .single-portfolio .topRow {
@@ -627,11 +677,15 @@ img.attachment-homepage-thumb {
   .portfolioSq {
     width: 100%; }
     .portfolioSq .portfolioContent h2 {
-      font-size: 2.2rem; } }
+      font-size: 2.2rem; }
+  .contact a {
+    font-size: 2rem; } }
 
 @media (max-width: 400px) {
-  .single-portfolio h3.single {
-    line-height: 1px; } }
+  .single-portfolio .main h3.single {
+    line-height: 2.7rem; }
+  .single-portfolio .main h4 {
+    margin: 5% 0; } }
 
 /* =============================================================================
                    Default Styling
@@ -727,9 +781,11 @@ footer {
     font-size: 0.5rem; }
   footer .social {
     width: 100%;
-    padding: 7% 0;
+    padding: 2% 0;
     text-align: center; }
     footer .social svg#Layer_1 {
-      margin: 0 4%; }
-    footer .social a:hover {
-      fill: black; }
+      margin: 0 3%;
+      width: 30px;
+      height: 30px; }
+    footer .social a:hover path {
+      fill: #FF395A; }

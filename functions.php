@@ -76,13 +76,6 @@ function hackeryou_scripts() {
   );
 }
 
-	wp_enqueue_script(
-	  'plugins', //handle
-	  get_template_directory_uri() . '/js/svg-morpheus.js', //source
-	  false, //dependencies
-	  null, // version number
-	  true //load in footer
-	);
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
 
