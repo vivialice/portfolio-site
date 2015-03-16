@@ -34,12 +34,18 @@ get_header();  ?>
 			<!-- :) -->
 
 			<div class="patternLeft">
-				<img src="<?php bloginfo( 'template_directory' ); ?>/img/shape-left.svg" alt="">
+				<img src="<?php bloginfo( 'template_directory' ); ?>/img/shape-left-1.svg" alt="">
 			</div><!-- /.patternLeft -->
+			<div class="patternLeft2">
+				<img src="<?php bloginfo( 'template_directory' ); ?>/img/shape-left-2.svg" alt="">
+			</div><!-- /.patternLeft2 -->	
 
 			<div class="patternRight">
-				<img src="<?php bloginfo( 'template_directory' ); ?>/img/shape-right.svg" alt="">
+				<img src="<?php bloginfo( 'template_directory' ); ?>/img/shape-right-1.svg" alt="">
 			</div><!-- /.patternRight -->
+			<div class="patternRight2">
+				<img src="<?php bloginfo( 'template_directory' ); ?>/img/shape-right-2.svg" alt="">
+			</div><!-- /.patternRight2 -->	
 
 		</section><!-- /.landing -->
 	
@@ -131,8 +137,9 @@ get_header();  ?>
 	</section><!-- /.portfolio -->
 	
 	<div id="contact" class="contact container clearfix">
-
+		<!-- <h3>Contact me</h3> -->
 		<a href="mailto:hello@vivienilett.com">hello@vivienilett.com</a>
+		<p>We should work together.</p>
 
 	</div><!-- /.container -->
 

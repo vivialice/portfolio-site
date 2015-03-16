@@ -236,14 +236,15 @@ section.landing {
   section.landing img {
     display: block;
     margin: 0 auto;
-    margin-top: 5%; }
-  section.landing .patternLeft {
+    margin-top: 5%;
+    position: relative; }
+  section.landing .patternLeft, section.landing .patternLeft2 {
     position: absolute;
     left: 3%;
     bottom: -7%; }
-  section.landing .patternRight {
+  section.landing .patternRight, section.landing .patternRight2 {
     position: absolute;
-    bottom: -7%;
+    bottom: -2%;
     right: -2%; }
 
 .siteWrapper {
@@ -347,46 +348,20 @@ svg.hand-point2 {
 .contact {
   padding-bottom: 10%; }
   .contact a {
-    text-align: center;
     display: block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    color: #3CEFBB; }
-  .contact a:hover {
-    color: #FF395A; }
-  .contact p {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase; }
-  .contact input {
-    border-top: none;
-    border-right: none;
-    border-bottom: 3px solid black;
-    border-left: none;
-    background: #FAFAFA;
-    width: 100%;
-    margin-top: 5px;
-    padding: 1%; }
-  .contact .wpcf7-textarea {
-    border-top: none;
-    border-right: none;
-    border-bottom: 3px solid black;
-    border-left: none;
-    background: #FAFAFA;
-    width: 100%;
-    margin-top: 5px; }
-  .contact input.wpcf7-submit {
-    display: inline;
-    border: 4px solid #FF395A;
-    padding: 1% 4%;
-    width: 200px;
+    font-size: 2rem;
+    padding: 1% 2%;
     color: #FF395A;
-    background: white;
-    margin: 0; }
-  .contact div.wpcf7-mail-sent-ok {
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
+    border: 4px solid #FF395A;
+    width: 40%;
+    margin: 0 auto;
     text-align: center; }
+  .contact a:hover {
+    color: #3CEFBB; }
+  .contact p {
+    text-align: center;
+    font-family: 'Lora', serif; }
 
 /* =============================================================================
                    Home Portfolio
