@@ -219,7 +219,9 @@ section.landing {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     position: relative;
-    top: 40%; }
+    top: 40%;
+    width: 350px;
+    height: 350px; }
   section.landing svg.hand-point {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -561,6 +563,21 @@ img.attachment-homepage-thumb {
   margin: 10% 0; }
 
 @media (max-width: 1120px) {
+  section.landing svg {
+    width: 300px;
+    height: 300px; }
+  section.landing .patternLeft, section.landing .patternLeft2 {
+    position: absolute;
+    left: 3%;
+    bottom: 0%; }
+    section.landing .patternLeft img, section.landing .patternLeft2 img {
+      width: 400px; }
+  section.landing .patternRight, section.landing .patternRight2 {
+    position: absolute;
+    bottom: 3%;
+    right: -2%; }
+    section.landing .patternRight img, section.landing .patternRight2 img {
+      width: 600px; }
   .container {
     max-width: 800px; }
   .aboutContainer {
@@ -582,6 +599,10 @@ img.attachment-homepage-thumb {
     padding: 0 5%; } }
 
 @media (max-width: 900px) {
+  section.landing .patternLeft, section.landing .patternLeft2 {
+    left: -5%; }
+  section.landing .patternRight, section.landing .patternRight2 {
+    right: -10%; }
   .aboutContainer .aboutLeft, .aboutContainer .aboutRight {
     float: none;
     width: 100%;
@@ -613,6 +634,19 @@ img.attachment-homepage-thumb {
     line-height: 1.7rem; } }
 
 @media (max-width: 740px) {
+  section.landing svg {
+    width: 280px;
+    height: 280px; }
+  section.landing .patternLeft, section.landing .patternLeft2 {
+    left: -13%;
+    bottom: 3%; }
+    section.landing .patternLeft img, section.landing .patternLeft2 img {
+      width: 400px; }
+  section.landing .patternRight, section.landing .patternRight2 {
+    bottom: 5%;
+    right: -18%; }
+    section.landing .patternRight img, section.landing .patternRight2 img {
+      width: 550px; }
   .aboutContainer h3.work {
     margin-bottom: 6%; }
   .single-portfolio .topRow {
@@ -673,7 +707,7 @@ img.attachment-homepage-thumb {
       font-size: 1rem;
       margin-top: 5%; } }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   section.landing h1 {
     font-size: 0.7rem; }
   section.landing svg {
@@ -682,6 +716,10 @@ img.attachment-homepage-thumb {
   section.landing svg.hand-point2 {
     width: 55px;
     height: 55px; }
+  .portfolioSq .portfolioContent {
+    padding: 7%; }
+    .portfolioSq .portfolioContent h2 {
+      font-size: 1.8rem; }
   .aboutContainer {
     padding: 8% 5% 25% 5%; }
     .aboutContainer h3.work {
@@ -691,7 +729,17 @@ img.attachment-homepage-thumb {
     .aboutContainer .aboutRight span {
       font-size: 1rem; }
     .aboutContainer .aboutRight p {
-      font-size: 0.9rem; } }
+      font-size: 0.9rem; }
+  .contact a {
+    font-size: 1rem;
+    border: 2px solid #FF395A;
+    padding: 3% 4%; }
+  .contact p {
+    margin-top: 10%;
+    font-size: 0.9rem; }
+  footer a {
+    padding: 3% 2%;
+    margin-bottom: 2%; } }
 
 /* =============================================================================
                    Default Styling

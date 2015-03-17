@@ -13,8 +13,7 @@ get_header();  ?>
 		<h1>Vivien Ilett // front-end developer <span>&amp;</span> designer</h1>
 
 			<!-- LOGO -->
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="350px" height="350px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
 			<g>
 				<g>
 					<path fill="#FFFFFF" d="M44.499,79.808c-19.47,0-35.309-15.84-35.309-35.31c0-19.469,15.839-35.309,35.309-35.309
