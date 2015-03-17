@@ -27,7 +27,7 @@ $(function(){
 		var yp = y / $window.height();
 
 		// figure out how many px we want it to change
-		var pixels = 15; // 20px for 100% change
+		var pixels = 10; // 20px for 100% change
 
 		// figure out what that is in a decmial form
 		var pixelRatio = pixels * 0.01; 
@@ -48,6 +48,7 @@ $(function(){
 		})
 
 	});
+
 
 	// get time from user + return message in about section
 	var timeMessage = function() {
@@ -93,5 +94,4 @@ $(function(){
 	    }
 	  });
 	});
-
 });

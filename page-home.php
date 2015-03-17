@@ -54,8 +54,7 @@ get_header();  ?>
 		
 
 		<!-- hand icon -->
-		<svg class="hand-point2 bounce" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="70px" height="70px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+		<svg class="hand-point2 bounce" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
 			 <g>
 			 	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M60.03,32.754
 			 		c0.283-1.49,0.353-14.773-5.599-21.292c-0.783-0.858-1.197-4.237-2.079-4.89C47.32,2.962,38.566,3.77,33.83,5.744
@@ -86,7 +85,7 @@ get_header();  ?>
 			<div class="aboutRight">
 				<?php echo the_field('about_copy'); ?>
 				<div class="btn">
-					<a href="#contact">Want to chat?</a>
+					<a href="#contact">Let's chat!</a>
 				</div><!-- /.contactBtn -->
 			</div><!-- /.aboutRight -->
 
@@ -111,9 +110,11 @@ get_header();  ?>
 
 		<?php if($latestPosts->have_posts()) while($latestPosts->have_posts()) : $latestPosts->the_post(); ?>
 					<div class="portfolioSq">
-						<div class="portfolioContent"><a class="box" href="<?php echo get_permalink(); ?>">
+						<div class="portfolioContent">
+							<a class="box" href="<?php echo get_permalink(); ?>">
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field('short_description'); ?></h3>
+							</a>
 							<a class="btnView" target="blank" href="<?php the_field('live_site'); ?>">View it live</a>
 							<div class="tag">
 								
@@ -129,7 +130,7 @@ get_header();  ?>
 							</div><!-- /.tag -->
 						</div><!-- /.portfolioContent -->
 							<?php the_post_thumbnail( 'homepage-thumb' ); ?>
-					</a>
+					
 					</div><!-- /.portfolioSq -->
 
 		<?php endwhile // end custom loop ?>
@@ -139,7 +140,7 @@ get_header();  ?>
 	<div id="contact" class="contact container clearfix">
 		<!-- <h3>Contact me</h3> -->
 		<a href="mailto:hello@vivienilett.com">hello@vivienilett.com</a>
-		<p>We should work together.</p>
+		<p>We should work together!</p>
 
 	</div><!-- /.container -->
 

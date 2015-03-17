@@ -28,6 +28,7 @@
 	      </h3>
 
 			<section class="entry-content">
+				<?php the_post_thumbnail('large'); ?>
 				<?php the_excerpt(); ?>
 			</section><!-- .entry-content -->
 

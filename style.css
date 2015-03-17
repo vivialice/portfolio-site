@@ -192,8 +192,8 @@ section.nav {
     line-height: 4.5rem;
     color: #FFF;
     text-transform: uppercase;
-    padding: 10px;
-    font-family: 'Montserrat'; }
+    font-family: 'Montserrat';
+    font-size: 1rem; }
     section.nav ul.menu li a:hover {
       color: #FF395A; }
 
@@ -224,7 +224,7 @@ section.landing {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
-  section.landing h1, section.landing h2 {
+  section.landing h1 {
     color: white;
     text-align: center;
     background: #3CEFBB; }
@@ -260,7 +260,9 @@ svg.hand-point2 {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 70px;
+  height: 70px; }
 
 .bounce {
   -webkit-animation: bounce 2s infinite;
@@ -296,13 +298,13 @@ svg.hand-point2 {
                    About Section
    ========================================================================== */
 .aboutContainer {
-  padding: 10% 0 20% 0;
+  padding: 10% 0 17% 0;
   width: 100%;
   background: white;
   position: relative; }
   .aboutContainer h3.work {
     position: absolute;
-    bottom: -8%;
+    bottom: -10%;
     z-index: 150; }
   .aboutContainer .aboutLeft {
     width: 50%;
@@ -326,7 +328,7 @@ svg.hand-point2 {
     .aboutContainer .aboutRight p {
       line-height: 1.5;
       font-family: 'Lora' sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       letter-spacing: 0.1rem;
       display: inline; }
 
@@ -346,22 +348,22 @@ svg.hand-point2 {
                    Contact Section
    ========================================================================== */
 .contact {
-  padding-bottom: 10%; }
+  padding-bottom: 5%;
+  text-align: center; }
   .contact a {
-    display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     padding: 1% 2%;
     color: #FF395A;
-    border: 4px solid #FF395A;
-    width: 40%;
-    margin: 0 auto;
-    text-align: center; }
+    border: 3px solid #FF395A; }
   .contact a:hover {
-    color: #3CEFBB; }
+    color: #3CEFBB;
+    border: 3px solid #3CEFBB; }
   .contact p {
     text-align: center;
-    font-family: 'Lora', serif; }
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    margin-top: 3%; }
 
 /* =============================================================================
                    Home Portfolio
@@ -393,7 +395,7 @@ svg.hand-point2 {
     font-family: 'Abril Fatface', serif;
     letter-spacing: 0.2rem;
     color: #333;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-top: 3%;
     margin: 0;
     margin-bottom: 2%;
@@ -402,17 +404,19 @@ svg.hand-point2 {
     font-family: 'Lora', serif;
     display: block;
     color: #333;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
     margin: 0;
     margin-bottom: 8%; }
+  .portfolioContent a.box:hover h2, .portfolioContent a.box:hover h3 {
+    color: #FF395A; }
   .portfolioContent a.btnView {
-    border: 3px solid white;
+    border: 2px solid white;
     padding: 2% 4%;
     color: white;
     font-size: 1rem; }
   .portfolioContent a.btnView:hover {
-    border: 3px solid #FF395A;
+    border: 2px solid #FF395A;
     color: #FF395A; }
 
 .tag {
@@ -574,8 +578,6 @@ img.attachment-homepage-thumb {
     margin-bottom: 5%; }
   .line {
     right: 380px; }
-  .contact a {
-    padding-bottom: 10%; }
   .single-portfolio .container {
     padding: 0 5%; } }
 
@@ -608,9 +610,7 @@ img.attachment-homepage-thumb {
     background-repeat: none; }
   .single-portfolio .descBox .descCopy p {
     font-size: 1.1rem;
-    line-height: 1.7rem; }
-  .contact a {
-    padding-bottom: 10%; } }
+    line-height: 1.7rem; } }
 
 @media (max-width: 740px) {
   .aboutContainer h3.work {
@@ -628,7 +628,7 @@ img.attachment-homepage-thumb {
   .single-portfolio .descBox a {
     border: 2px solid #FF395A; }
   .contact a {
-    font-size: 3rem; } }
+    font-size: 1.8rem; } }
 
 @media (max-width: 650px) {
   .single-portfolio .topRow {
@@ -654,13 +654,44 @@ img.attachment-homepage-thumb {
     .portfolioSq .portfolioContent h2 {
       font-size: 2.2rem; }
   .contact a {
-    font-size: 2rem; } }
+    font-size: 1.5rem; } }
 
 @media (max-width: 400px) {
   .single-portfolio .main h3.single {
     line-height: 2.7rem; }
   .single-portfolio .main h4 {
-    margin: 5% 0; } }
+    margin: 5% 0; }
+  .single-portfolio .aboutContainer h3.work {
+    bottom: -7%; }
+  .single-portfolio .aboutContainer h2 {
+    font-size: 3rem; }
+  .single-portfolio .aboutContainer p {
+    font-size: 1rem; }
+  .contact {
+    padding: 5% 0; }
+    .contact p {
+      font-size: 1rem;
+      margin-top: 5%; } }
+
+@media (max-width: 320px) {
+  section.landing h1 {
+    font-size: 0.7rem; }
+  section.landing svg {
+    width: 250px;
+    top: 40%; }
+  section.landing svg.hand-point2 {
+    width: 55px;
+    height: 55px; }
+  .aboutContainer {
+    padding: 8% 5% 25% 5%; }
+    .aboutContainer h3.work {
+      bottom: -6%; }
+    .aboutContainer h2.message {
+      font-size: 2.5rem; }
+    .aboutContainer .aboutRight span {
+      font-size: 1rem; }
+    .aboutContainer .aboutRight p {
+      font-size: 0.9rem; } }
 
 /* =============================================================================
                    Default Styling
@@ -670,7 +701,7 @@ body {
   margin: 0; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto; }
 
 .innerWrapper {
@@ -717,10 +748,13 @@ h4 {
 .btn {
   margin-top: 9%; }
   .btn a {
-    border: 4px solid #FF395A;
+    border: 3px solid #FF395A;
     padding: 2% 4%;
     color: #FF395A;
     font-size: 1.1rem; }
+  .btn a:hover {
+    border: 3px solid #3CEFBB;
+    color: #3CEFBB; }
 
 .is-hidden {
   display: none; }
@@ -744,7 +778,6 @@ h4 {
    ========================================================================== */
 footer {
   clear: both;
-  background: #3CEFBB;
   margin: 0;
   width: 100%;
   padding: 1% 0; }
@@ -753,14 +786,17 @@ footer {
     padding: 0;
     text-align: center;
     color: white;
-    font-size: 0.5rem; }
+    font-size: 0.5rem;
+    color: #333; }
   footer .social {
     width: 100%;
-    padding: 2% 0;
+    padding: 3% 0;
     text-align: center; }
     footer .social svg#Layer_1 {
       margin: 0 3%;
       width: 30px;
       height: 30px; }
+    footer .social a path {
+      fill: #3CEFBB; }
     footer .social a:hover path {
       fill: #FF395A; }
