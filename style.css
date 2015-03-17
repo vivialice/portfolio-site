@@ -679,6 +679,14 @@ img.attachment-homepage-thumb {
     border: 2px solid #FF395A; } }
 
 @media (max-width: 550px) {
+  section.landing svg {
+    width: 260px;
+    height: 260px; }
+  section.landing .patternLeft, section.landing .patternLeft2 {
+    left: -19%; }
+  section.landing .patternRight, section.landing .patternRight2 {
+    bottom: 8%;
+    right: -25%; }
   .aboutContainer {
     padding-bottom: 20%; }
     .aboutContainer h3.work {
@@ -690,17 +698,44 @@ img.attachment-homepage-thumb {
   .contact a {
     font-size: 1.5rem; } }
 
+@media (max-width: 480px) {
+  section.landing .patternLeft, section.landing .patternLeft2 {
+    left: -22%;
+    top: 3%; }
+    section.landing .patternLeft img, section.landing .patternLeft2 img {
+      width: 350px; }
+  section.landing .patternRight, section.landing .patternRight2 {
+    top: 2%;
+    right: -30%; }
+    section.landing .patternRight img, section.landing .patternRight2 img {
+      width: 500px; } }
+
 @media (max-width: 400px) {
+  section.landing .patternLeft, section.landing .patternLeft2 {
+    left: -50%;
+    top: 0%; }
+    section.landing .patternLeft img, section.landing .patternLeft2 img {
+      width: 340px; }
+  section.landing .patternRight, section.landing .patternRight2 {
+    top: 4%;
+    right: -42%; }
+    section.landing .patternRight img, section.landing .patternRight2 img {
+      width: 450px; }
+  section.landing svg.hand-point2 {
+    width: 60px;
+    height: 60px; }
   .single-portfolio .main h3.single {
     line-height: 2.7rem; }
   .single-portfolio .main h4 {
     margin: 5% 0; }
-  .single-portfolio .aboutContainer h3.work {
-    bottom: -7%; }
-  .single-portfolio .aboutContainer h2 {
-    font-size: 3rem; }
-  .single-portfolio .aboutContainer p {
-    font-size: 1rem; }
+  .aboutContainer {
+    padding: 8% 5% 25% 5%; }
+    .aboutContainer h3.work {
+      bottom: -6%; }
+    .aboutContainer h2 {
+      font-size: 2.5rem; }
+    .aboutContainer p {
+      font-size: 1rem; }
   .contact {
     padding: 5% 0; }
     .contact p {
@@ -708,6 +743,11 @@ img.attachment-homepage-thumb {
       margin-top: 5%; } }
 
 @media (max-width: 350px) {
+  section.landing .patternLeft, section.landing .patternLeft2 {
+    left: -55%; }
+  section.landing .patternRight, section.landing .patternRight2 {
+    top: 0%;
+    right: -55%; }
   section.landing h1 {
     font-size: 0.7rem; }
   section.landing svg {
@@ -739,7 +779,13 @@ img.attachment-homepage-thumb {
     font-size: 0.9rem; }
   footer a {
     padding: 3% 2%;
-    margin-bottom: 2%; } }
+    margin-bottom: 2%; }
+  .single-portfolio .portNav {
+    margin: 5% 0; }
+    .single-portfolio .portNav a {
+      color: #333; }
+    .single-portfolio .portNav a:hover {
+      color: #FF395A; } }
 
 /* =============================================================================
                    Default Styling
