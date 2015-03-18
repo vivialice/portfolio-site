@@ -9,7 +9,7 @@
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <h3 class="entry-title"><?php the_title(); ?></h3>
 
-          <p>Posted on: <?php the_date('F j, Y'); ?></p>
+          <p><?php the_date('F j, Y'); ?></p>
 
           <div class="entry-content">
             <?php the_post_thumbnail('full'); ?>

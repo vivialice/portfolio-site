@@ -23,7 +23,7 @@
 			<h3 class="entry-title">
 		        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
 		          <?php the_title(); ?>
-		          <p>Posted on: <?php the_date('F j, Y'); ?></p>
+		          <p><?php the_date('F j, Y'); ?></p>
 		        </a>
 	      </h3>
 
