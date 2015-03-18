@@ -31,7 +31,16 @@
         </div><!-- /.theTerms -->
 
         <!-- next and previous buttons -->
-        <div class="portNav"><?php next_post_link('%link', 'PREV'); ?> | <?php previous_post_link('%link', 'NEXT'); ?></div>
+        <div class="portNav">       
+          <p class="controls"><?php
+           next_post_link('<span class="right">&laquo; %link </span>'); 
+           previous_post_link('<span class="left">%link &raquo;</span>');
+           ?></p> <!-- end .controls --> 
+        </div>
+        <div class="clearfix"></div>
+<!--         <div class="portNav"><?php next_post_link('%link', 'PREV'); ?> | <?php previous_post_link('%link', 'NEXT'); ?></div> -->
+
+
 
   </div> <!-- /.container -->      
 

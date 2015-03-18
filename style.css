@@ -222,7 +222,7 @@ section.landing {
     top: 40%;
     width: 350px;
     height: 350px; }
-  section.landing svg.hand-point {
+  section.landing svg.hand-point2 {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
@@ -454,9 +454,18 @@ img.attachment-homepage-thumb {
   width: 100%;
   height: auto; }
 .single-portfolio .portNav a {
-  color: #333; }
-.single-portfolio .portNav a:hover {
+  color: #333;
+  font-size: 0.8rem;
   color: #FF395A; }
+.single-portfolio .portNav span.left, .single-portfolio .portNav span.right {
+  color: #FF395A;
+  padding: 1% 0; }
+.single-portfolio .portNav span.left {
+  float: right; }
+.single-portfolio .portNav span.right {
+  float: left; }
+.single-portfolio .portNav .controls p {
+  margin-bottom: 5%; }
 .single-portfolio .tag {
   margin: 0; }
   .single-portfolio .tag ul {
@@ -478,7 +487,8 @@ img.attachment-homepage-thumb {
 .single-portfolio .topRow {
   margin-top: 2%;
   background: #FDECFE;
-  height: 600px; }
+  height: 600px;
+  clear: both; }
   .single-portfolio .topRow .descBox, .single-portfolio .topRow .portfolio-page-thumb {
     width: 50%;
     display: block;
@@ -505,11 +515,14 @@ img.attachment-homepage-thumb {
       line-height: 2rem;
       margin-bottom: 8%; }
     .single-portfolio .topRow .descBox a {
-      border: 4px solid #FF395A;
+      border: 3px solid #FF395A;
       padding: 2% 4%;
       margin-top: 15%;
       color: #FF395A;
       font-size: 1.1rem; }
+    .single-portfolio .topRow .descBox a:hover {
+      border: 3px solid #3CEFBB;
+      color: #3CEFBB; }
 .single-portfolio .portfolio-page-thumb {
   height: 600px; }
 .single-portfolio .images img {
@@ -539,28 +552,41 @@ img.attachment-homepage-thumb {
 /* =============================================================================
                    Blog Main
    ========================================================================== */
-.blog .post {
+.blog img, .single img {
+  width: 100%;
+  height: auto; }
+.blog .post, .single .post {
   margin-bottom: 10%; }
-  .blog .post h3.entry-title a[rel="bookmark"] {
+  .blog .post h3.entry-title a[rel="bookmark"], .single .post h3.entry-title a[rel="bookmark"] {
     font-family: 'Abril Fatface', serif;
     color: #333; }
-  .blog .post p {
+  .blog .post h3.entry-title a[rel="bookmark"]:hover, .single .post h3.entry-title a[rel="bookmark"]:hover {
+    color: #FF395A; }
+  .blog .post p, .single .post p {
     font-family: 'Lora', serif;
-    font-size: 1.3rem;
-    line-height: 2rem; }
-  .blog .post .entry-content .cont {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .blog .post .entry-content .cont, .single .post .entry-content .cont {
     margin-top: 5%; }
-  .blog .post .entry-content a {
-    border: 4px solid #FF395A;
+  .blog .post .entry-content a, .single .post .entry-content a {
+    border: 3px solid #FF395A;
     padding: 1% 2%;
     color: #FF395A;
     font-size: 1.1rem;
     margin-top: 5%; }
-  .blog .post .entry-content a:hover {
-    border: 4px solid #3CEFBB;
+  .blog .post .entry-content a:hover, .single .post .entry-content a:hover {
+    border: 3px solid #3CEFBB;
     color: #3CEFBB; }
-.blog .blogContent {
+.blog .blogContent, .single .blogContent {
   margin: 10% 0; }
+
+/* =============================================================================
+                   Blog Single
+   ========================================================================== */
+.single h3 {
+  margin-bottom: 0; }
+.single p.nav-previous a, .single p.nav-next a {
+  color: #FF395A; }
 
 @media (max-width: 1120px) {
   section.landing svg {

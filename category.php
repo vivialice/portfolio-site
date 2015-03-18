@@ -3,7 +3,6 @@
 <div class="main">
   <div class="container">
     <div class="content">
-
       <h1>Category Archives: <?php single_cat_title(); ?></h1>
     	<?php
     		$category_description = category_description();
