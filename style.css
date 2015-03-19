@@ -597,15 +597,15 @@ img.attachment-homepage-thumb {
   section.landing .patternLeft, section.landing .patternLeft2 {
     position: absolute;
     left: 3%;
-    bottom: 0%; }
+    top: -3%; }
     section.landing .patternLeft img, section.landing .patternLeft2 img {
-      width: 400px; }
+      width: 475px; }
   section.landing .patternRight, section.landing .patternRight2 {
     position: absolute;
-    bottom: 3%;
+    top: -5%;
     right: -2%; }
     section.landing .patternRight img, section.landing .patternRight2 img {
-      width: 600px; }
+      width: 650px; }
   .container {
     max-width: 800px; }
   .aboutContainer {
@@ -764,6 +764,8 @@ img.attachment-homepage-thumb {
       margin-top: 5%; } }
 
 @media (max-width: 350px) {
+  section.landing svg {
+    top: 30%; }
   section.landing .patternLeft, section.landing .patternLeft2 {
     display: none; }
   section.landing .patternRight, section.landing .patternRight2 {
@@ -859,6 +861,9 @@ h4 {
   font-family: 'Montserrat' sans-serif;
   text-transform: uppercase;
   margin: 1% 0; }
+
+h2 {
+  font-weight: normal; }
 
 .btn {
   margin-top: 9%; }

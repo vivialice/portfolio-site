@@ -139,7 +139,7 @@ get_header();  ?>
 	<div id="contact" class="contact container clearfix">
 		<!-- <h3>Contact me</h3> -->
 		<a href="mailto:hello@vivienilett.com">hello@vivienilett.com</a>
-		<p>We should work together</p>
+		<p>We should work together.</p>
 
 	</div><!-- /.container -->
 

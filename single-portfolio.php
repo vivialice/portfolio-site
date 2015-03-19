@@ -54,8 +54,14 @@
 
           <div class="descBox">
             <div class="descCopy">
+
+              <?php $client = the_field('client_name'); ?>
+              <?php if ( ! empty($client) && is_wp_error($client) ) : ?>
+                <?php echo 'Client name:' . $client ?>
+              <?php endif ?>  
+
               <?php the_field('description'); ?>
-              <a class="btnView" href="<?php the_field('live_site'); ?>">View it live</a>
+              <a class="btnView" target="blank" href="<?php the_field('live_site'); ?>">View it live</a>
             </div><!-- /.descCopy -->
           </div><!-- /.descBox -->
         </div><!-- /.topRow -->
