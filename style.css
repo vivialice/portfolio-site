@@ -572,14 +572,19 @@ img.attachment-homepage-thumb {
     margin: 1% 0 2% 0; }
   .blog .post .entry-content .cont, .single .post .entry-content .cont {
     margin-top: 5%; }
-  .blog .post .entry-content a, .single .post .entry-content a {
-    border: 3px solid #FF395A;
-    padding: 1% 2%;
+    .blog .post .entry-content .cont a, .single .post .entry-content .cont a {
+      border: 3px solid #FF395A;
+      padding: 1% 2%;
+      color: #FF395A;
+      font-size: 1rem;
+      margin-top: 5%; }
+    .blog .post .entry-content .cont a:hover, .single .post .entry-content .cont a:hover {
+      border: 3px solid #3CEFBB;
+      color: #3CEFBB; }
+  .blog .post .entry-content p a, .single .post .entry-content p a {
     color: #FF395A;
-    font-size: 1.1rem;
-    margin-top: 5%; }
-  .blog .post .entry-content a:hover, .single .post .entry-content a:hover {
-    border: 3px solid #3CEFBB;
+    font-size: 1rem; }
+  .blog .post .entry-content p a:hover, .single .post .entry-content p a:hover {
     color: #3CEFBB; }
 .blog .blogContent, .single .blogContent {
   margin: 10% 0; }
